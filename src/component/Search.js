@@ -1,12 +1,21 @@
 import React from 'react'
 
-class Searchbar extends React.Component{
+import './Style.css'
 
+class Searchbar extends React.Component{
     render(){
+        let timer;
         return(
-            <div className="ui icon input">
-                <i className="search icon"></i>
-                <input id="searchText" onChange={e => {this.props.onSubmit(e.target.value)}} type="text" placeholder="Search..."></input>
+            <div className="ui icon input large">
+                <i className="black search icon opa"></i>
+                <input autoFocus id="searchText" 
+                    onChange={e => {
+                    clearTimeout(timer)
+                    timer = setTimeout(()=>{
+                        this.props.onSubmit(document.querySelector("#searchText").value)
+                    },2000) 
+                }}
+                    type="text" placeholder="Search news"></input>
             </div>
         )
     }

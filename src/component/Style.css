@@ -1,0 +1,49 @@
+body{
+    background-image: url(../util/img/Mainbgnews.jpg);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fixWidth{
+    width: 100vw!important;
+    height: 100%;
+}
+
+.removeBg{
+    background-color: transparent!important;
+    border: none!important;
+}
+
+.slightPad{
+    padding-top: 15px;
+}
+
+.neat{
+    border-radius: 15px!important;
+}
+
+.enlarge{
+    width: 100%;
+}
+
+.expand{
+    height: 90vh;
+}
+
+#searchText{
+    border-radius: 15px;
+}
+
+.opa{
+    opacity: 1!important;
+}
+
+.radius{
+    border-radius: 15px!important;
+}
+
+.padTop{
+    padding-top: 10vh!important;
+}
