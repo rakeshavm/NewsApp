@@ -17,7 +17,7 @@ class NewsDetail extends React.Component {
                 </div>
                 {console.log(this.props.Send)}
                 <a href={this.props.Send.url} className="">
-                    <img alt="related" className="ui centered massive image" src={this.props.Send.urlToImage}/>
+                    <img alt="related" className="ui centered massive image limHeight" src={this.props.Send.urlToImage}/>
                 </a>
                 <div className="content">
                     <h3 className="ui header">

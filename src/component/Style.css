@@ -46,8 +46,8 @@ body {
     height: 90vh;
 }
 
-#searchText {
-    border-radius: 15px;
+#searchDiv {
+    border-radius: 17px;
     border: 4px solid black;
 }
 
@@ -61,4 +61,20 @@ body {
 
 .padTop {
     padding-top: 10vh !important;
+}
+
+.white{
+    color: white!important;
+}
+
+.rightBor{
+    border-radius: 0 15px 15px 0!important;
+}
+
+.leftBor{
+    border-radius: 15px 0px 0px 15px!important;
+}
+
+.limHeight{
+    max-height: 50vh!important;
 }
