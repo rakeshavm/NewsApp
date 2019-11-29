@@ -3,15 +3,9 @@ import React from 'react'
 import './Style.css'
 
 const NewsList = props => {
-
-    // const sendNews = (title) => {
-    //     this.props.onExpand(title)
-    // }
-
     const renderList = props.list.map((e) => {
-            console.log(e)
             return(
-                <div key={e.title} className="card" onClick={() => {props.onExpand(e)}} >
+                <div key={e.title} style={{border: "4px solid black", cursor: "pointer"}} className="card" onClick={() => {props.onExpand(e)}} >
                     <div className="ui content">
                         <div className="header">{e.title}</div>
                         <div className="meta">{e.author}</div>

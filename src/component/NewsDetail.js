@@ -5,13 +5,13 @@ import "./Style.css"
 class NewsDetail extends React.Component {
     render() {
         return (
-            <div className="ui card fixWidth">
+            <div className="ui card fixWidth2">
                 <h2 className="ui header">
                     <div className="content slightPad">
                         {this.props.Send.title}
                     </div>
                 </h2>
-                <div className="content removeBg">
+                <div id="aut" className="content removeBg">
                     <div className="ui meta">{this.props.Send.author},</div>
                     <div className="ui meta">{this.props.Send.publishedAt}</div>
                 </div>

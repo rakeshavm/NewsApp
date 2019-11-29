@@ -32,6 +32,7 @@ class App extends React.Component {
                     sortBy: "relevancy"
                 }
             })
+            console.log(res);             
             const obj = {
                 key: term,
                 articles: res
@@ -74,7 +75,7 @@ class App extends React.Component {
                 </div>
             );
         } else {
-            console.log(this.state.title)
+            // console.log(this.state.title)
             return (
                 <div className="ui basic segment center aligned">
                     <NewsDetail Send={this.state.title} exit={this.handleExit}/>
