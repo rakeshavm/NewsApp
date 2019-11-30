@@ -15,7 +15,6 @@ class NewsDetail extends React.Component {
                     <div className="ui meta">{this.props.Send.author},</div>
                     <div className="ui meta">{this.props.Send.publishedAt}</div>
                 </div>
-                {console.log(this.props.Send)}
                 <a href={this.props.Send.url} className="">
                     <img alt="related" className="ui centered massive image limHeight" src={this.props.Send.urlToImage}/>
                 </a>

@@ -24,7 +24,6 @@ class App extends React.Component {
 
         //Setting up history
         let a = JSON.parse(localStorage.getItem("history")) || []
-        console.log(a.indexOf(newTerm));
         if(a.indexOf(newTerm) !== -1)
             a.splice(a.indexOf(newTerm),1)
         a.unshift(newTerm)
